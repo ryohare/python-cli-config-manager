@@ -20,7 +20,7 @@ project = 'cli-config-manager'
 year = '2020'
 author = "Ryan O'Hare"
 copyright = '{0}, {1}'.format(year, author)
-version = release = '0.0.0'
+version = release = '1.0.0'
 
 pygments_style = 'trac'
 templates_path = ['.']

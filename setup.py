@@ -25,7 +25,7 @@ def read(*names, **kwargs):
 
 setup(
     name='cli-config-manager',
-    version='0.0.0',
+    version='1.0.0',
     license='BSD-2-Clause',
     description='A simple configuration file manager designed for CLI applications.',
     long_description='%s\n%s' % (
