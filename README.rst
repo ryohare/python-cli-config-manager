@@ -51,9 +51,9 @@ Overview
     :alt: Supported implementations
     :target: https://pypi.org/project/cli-config-manager
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/ryohare/python-cli-config-manager/v0.0.0.svg
+.. |commits-since| image:: https://img.shields.io/github/commits-since/ryohare/python-cli-config-manager/v1.0.0.svg
     :alt: Commits since latest release
-    :target: https://github.com/ryohare/python-cli-config-manager/compare/v0.0.0...master
+    :target: https://github.com/ryohare/python-cli-config-manager/compare/v1.0.0...master
 
 
 

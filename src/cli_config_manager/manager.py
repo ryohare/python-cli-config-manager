@@ -26,7 +26,7 @@ class Config():
 
     def load_profile(self, profile) -> (str, map):
         """load profile will load the specified profile. Exceptions will be thrown in the
-        event no configuration data is able to be loaded. It will return a tuple with the 
+        event no configuration data is able to be loaded. It will return a tuple with the
         loaded profile, (will fall back to the config specified default if the passed in
         profile is not in the config file) and the config map"""
 
@@ -68,26 +68,13 @@ class Config():
             raise Exception("No profile specified")
         if config is None or config == {}:
             raise Exception("No config specified")
-        
+
         if default_profile is None:
             if 'default_profile' not in self._config.keys():
                 self._config['default_profile'] = profile
         else:
             self._config['default_profile'] = default_profile
         self._config[profile] = config
-
-    def __write_config(self, config=None, default_profile=None):
-        if config is not None:
-            self._config = config
-        if default_profile is None:
-            if 'default_profile' not in self._config.keys():
-                for k in self._config.keys():
-                    self._config['default_profile'] = k
-                    break
-        with open(self._path, "w") as f:
-            json_config = json.dumps(self._config)
-            f.write(json_config)
-            os.chmod(self._path, 0o600)
 
     def get_filepath(self):
         """Return the config file path"""

@@ -1,6 +1,6 @@
 
-from cli_config_manager import main
+from cli_config_manager import Config
 
 
 def test_main():
-    pass
+    Config("test")
